@@ -1,0 +1,28 @@
+{
+  "name": "jobshield-ai",
+  "version": "1.0.0",
+  "description": "AI-powered platform to detect fake job scams and protect job seekers.",
+  "private": false,
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "scripts": {
+    "install:all": "pnpm --dir client install && pnpm --dir server install",
+    "dev": "concurrently \"pnpm --dir server dev\" \"pnpm --dir client dev\"",
+    "build": "pnpm --dir client build",
+    "start": "pnpm --dir server start",
+    "test": "node shared/riskEngine.test.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "job-scam-detection",
+    "agentic-ai",
+    "mern",
+    "job-safety",
+    "react",
+    "express"
+  ],
+  "author": "Rohit Kumar",
+  "license": "MIT"
+}
