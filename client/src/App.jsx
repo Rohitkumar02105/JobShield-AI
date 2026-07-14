@@ -8,7 +8,7 @@ import {
   Sparkles,
   WalletCards
 } from "lucide-react";
-import { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { analyzeJobRisk, demoScamInput } from "../../shared/riskEngine.js";
 
 const safeDemo = {
